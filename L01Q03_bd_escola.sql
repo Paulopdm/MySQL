@@ -7,8 +7,8 @@ create database db_escola;
 use db_escola;
 create table tb_alunos (
 	id bigint(5) auto_increment,
-    matricula varchar(20),
-    nome varchar(50),
+    matricula varchar(20) not null,
+    nome varchar(50) not null,
     media decimal(10,2),
     ativo boolean,
     primary key (id)

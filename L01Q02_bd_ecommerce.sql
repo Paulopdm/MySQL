@@ -6,8 +6,8 @@ create database db_ecommerce;
 use db_ecommerce;
 create table tb_produtos (
 	id bigint(5) auto_increment,
-    setor varchar(20),
-    produto varchar(20),
+    setor varchar(20) not null,
+    produto varchar(20) not null,
     valor decimal(10,2),
     ativo boolean,
     primary key (id)
